@@ -1,0 +1,37 @@
+doctype html
+html
+    head
+        link(rel="stylesheet", href="style.css")
+        title Newsletter Title
+
+    body
+        //Contain the newsletter
+        wrapper
+            //Each content need to be in a row -> column
+            row
+                columns-align-center
+                    h1 Newshater
+
+            row
+                columns-align-center ----------- I'm the inner row ----------
+
+            //Spacer create space between two element
+            spacer(height="40px")
+
+            row
+                columns-spacer(width="20%")
+                columns.v-top(height="80px") I'm The first column
+                columns
+                    row
+                        columns-align-center
+                            p I'm The second column afa
+
+                    spacer(height="40px")
+
+                    row
+                        columns
+                            p test 2 d'alignement
+
+
+                columns-align-right.v-bottom(width="20%")
+                    a-link(href='http://3.bp.blogspot.com/-u4jdtPBjfFg/VJdieiavtEI/AAAAAAAASWM/leZzenYv--A/s1600/Photo-chat-trop-mignon-et-dr%C3%B4le-19.jpg') Image de chat

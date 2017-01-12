@@ -1,0 +1,52 @@
+table{
+  border-spacing: 0px;
+  width: 100%;
+}
+
+.link, a{
+  text-decoration: $text-decoration;
+  color: $link-color;
+}
+
+p, html, body, h1, h2, h3, h4, h5, h6{
+  margin: 0px;
+  padding: 0px;
+  line-height: 1;
+}
+
+//Newsletter container
+.wrapper{
+  width: $newsletter-width;
+  max-width: $newsletter-max-width;
+}
+
+//Spacer
+.spacer{
+  width: 100%;
+  clear: both;
+}
+
+//Align to top
+.v-top{
+  vertical-align: top;
+}
+
+//Align to bottom
+.v-bottom{
+  vertical-align: bottom;
+}
+
+//text center
+.t-center{
+  text-align: center;
+}
+
+//text align left
+.t-left{
+  text-align: left;
+}
+
+//text align right
+.t-right{
+  text-align: right;
+}
