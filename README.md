@@ -1,19 +1,40 @@
-# How to use
-1. ```npm install```
-2. use gulp with ```gulp``` or ```gulp watch```
-
 # How it works
 * Transform "special tag" to some normal tag like: ```row``` => ```<table><tr></tr></table>```
 * You can use Scss and it will inline it to tags in the html. You only have to link it to the document.
 * It use .pug (was jade before) to minimise html. You'll need to read pug docs <a href="https://pugjs.org/language/tags.html">https://pugjs.org/language/tags.html</a>
+#### Exemple
+```
+//Contain the newsletter
+    wrapper
+        //Each content need to be in a row -> column
+        row
+            //Can put few collumns
+            columns-align-center()
+                h1 Newshater
+        row
+            //columns-align-xxx will align content
+            columns-align-right(width="25%").
+                 Newshater is <br/>
+                 Really nice!
+            columns-align-left(width="50%")
+                            p Newshater = newsletter (lol)
+            columns-align-center(width="25%")
+                            p Newshater will be better than foundation mail framework!
+                            
+        row
+            columns.customClass Just some text
+```
 
+
+# How to use
+1. ```npm install```
+2. use gulp with ```gulp``` or ```gulp watch```
 
 # Understand the workflow
 * File in src will be compile to process.
 * The special tags in proccess will be compile in dist folder.
 * So you can use html only with special tag and paste it to process and run ```gulp``` command. It's **not recommended** and not usefull.
 * In dist it will create html and css. Css will be inline in html at this part. So **you can and you should DELETE** the **.css** file in dist folder at the end **or anytime**.
-
 
 # The list of special tags
 #### You can consult the /newshater/newshater-core-components.js**<br/>
@@ -63,6 +84,7 @@
 * Add other components
 * Add more flexibility/function in the components creation
 * Organise folders
+* Create base template
 
 ##
 #### Liscense
