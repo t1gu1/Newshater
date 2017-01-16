@@ -37,26 +37,26 @@
 * In ```dist``` folder, it will create html and css. Css will be inline in html at this part. So **you can and you should DELETE** the **.css** file in ```dist``` folder at the end **or anytime**.
 
 # The list of specials tags
-#### You can consult the /newshater/newshater-core-components.js**<br/>
-#### Left side = custom tag **"=>"** right side of  = .pug **representation like** (shorter than html for explain)**
+#### You can consult the /newshater/newshater-core-components.js  
+#### Left side = custom tag **"=>"** right side of  = .pug **representation like** (shorter than html for explain)  
 
-##### Wrapper is the newsletter container. All should be in this container
+Wrapper is the newsletter container. All should be in this container  
 * ```wrapper``` **=>** ```table``` -> ```tr``` -> ```td(align="center")``` -> ```table.wrapper``` -> ```tr``` -> ```td```
 
-##### Row is like a row in the popular framework
+Row is like a row in the popular framework  
 * ```row``` **=>** ```table.row``` -> ```tr```
 
-##### All columns have to be in a row
-* ```columns``` **=>** td.columns
+All columns have to be in a row  
+* ```columns``` **=>** ```td.columns```
 * ```columns-align-center``` **=>** ```td.columns(align="center")```
 * ```columns-align-left``` **=>** ```td.columns(align="left")```
 * ```columns-align-right``` **=>** ```td.columns(align="left")```
 * ```columns-spacer``` **=>** ```td.columns-spage &nbsp```;
 
-##### Spacer is like a row and it should not contain content
+Spacer is like a row and it should not contain content  
 * ```row``` **=>** ```table.spacer``` -> ```tr``` -> ```td```
 
-##### a-link place the target="blank" automatically
+a-link place the target="blank" automatically  
 * ```a-link``` **=>** ```a.link(target="blank")```
 
 # How to add custom tag
